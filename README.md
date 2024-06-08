@@ -37,6 +37,19 @@ _Note: if something looks off please submit an issue with a screenshot_
 ```lua
 use({ "spaceduck-theme/nvim", as = "spaceduck" })
 ```
+## [lazy.nvim](https://github.com/folke/lazy.vim)
+
+```lua
+return {
+    "spaceduck-theme/nvim",
+    name = "spaceduck",
+    lazy = false,
+    priority = 1000,
+    config = function()
+        vim.cmd[[colorscheme spaceduck]]
+    end
+}
+```
 
 We use semver on spaceduck so you can refer to a specific tag if you want instead of the `master` branch.
 
@@ -51,12 +64,38 @@ We use semver on spaceduck so you can refer to a specific tag if you want instea
   <img  src="https://user-images.githubusercontent.com/32819563/111935037-3ab41d80-8a88-11eb-8797-2b6db14cbff8.png" alt="lualine replace mode screenshot">
 </center>
 
+## PACKER
+
 ```lua
 require("lualine").setup({
   options = {
     theme = "spaceduck",
   },
 })
+```
+## LAZYVIM
+
+```lua
+return {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    lazy = false,
+    priority = 1000,
+    opts = {
+        options = {
+            globalstatus = true,
+            theme = 'spaceduck',
+        },
+        tabline = {
+            lualine_a = {'buffers'},
+            lualine_b = {},
+            lualine_c = {},
+            lualine_x = {},
+            lualine_y = {},
+            lualine_z = {'tabs'},
+        },
+    },
+}
 ```
 
 # Contributing
