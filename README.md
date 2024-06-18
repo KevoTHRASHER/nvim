@@ -40,6 +40,12 @@ use({ "spaceduck-theme/nvim", as = "spaceduck" })
 ## [lazy.nvim](https://github.com/folke/lazy.vim)
 
 ```lua
+{ "spaceduck-theme/nvim", name = "spaceduck", priority = 1000 }
+```
+
+If you have structure your plugins ***lua/plugins*** folder with a file per plugin, or a separate file
+
+```lua
 return {
     "spaceduck-theme/nvim",
     name = "spaceduck",
