@@ -70,7 +70,7 @@ We use semver on spaceduck so you can refer to a specific tag if you want instea
   <img  src="https://user-images.githubusercontent.com/32819563/111935037-3ab41d80-8a88-11eb-8797-2b6db14cbff8.png" alt="lualine replace mode screenshot">
 </center>
 
-## PACKER
+## [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 require("lualine").setup({
@@ -79,7 +79,7 @@ require("lualine").setup({
   },
 })
 ```
-## LAZYVIM
+## [lazy.nvim](https://github.com/folke/lazy.vim)
 
 ```lua
 return {
