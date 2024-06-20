@@ -1,6 +1,6 @@
 <div align="center">
-	<h1>Spaceduck theme for Nvim</h1>
-	<strong>Spaceduck for neovim. All Lua, all spaceduck, always intergalactic.</strong>
+    <h1>Spaceduck theme for Nvim</h1>
+    <strong>Spaceduck for neovim. All Lua, all spaceduck, always intergalactic.</strong>
 </div>
 
 <hr>
@@ -85,11 +85,8 @@ require("lualine").setup({
 return {
     "nvim-lualine/lualine.nvim",
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    lazy = false,
-    priority = 1000,
     opts = {
         options = {
-            globalstatus = true,
             theme = 'spaceduck',
         },
     },
